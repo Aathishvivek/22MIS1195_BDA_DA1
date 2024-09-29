@@ -1,8 +1,8 @@
-Fraud Detection System Using Self-Organizing Maps (SOM) and Artificial Neural Networks (ANN)
+# Fraud Detection System Using Self-Organizing Maps (SOM) and Artificial Neural Networks (ANN)
 
 This aims to develop a hybrid deep learning model for detecting potential fraud in credit card applications using a dataset from a bank. By implementing Self-Organizing Maps (SOM) for unsupervised learning and Artificial Neural Networks (ANN) for supervised learning, we achieve a fraud detection success rate of 96%. This innovative approach enhances the decision-making process in credit card approvals, safeguarding financial institutions against fraudulent activities.
 
-Dataset:
+## Dataset:
 The dataset used in this project consists of customer applications for an advanced credit card. It contains the following features:
 
 CustomerID	A1	A2	A3	A4	A5	A6	A7	A8	A9	A10	A11	A12	A13	A14	Class
@@ -18,7 +18,7 @@ A1 - A14: Various features representing customer attributes and behaviors.
 Class: Indicates whether the application is fraudulent (1) or not (0).
 
 
-Technologies Used:
+## Technologies Used:
 
 TensorFlow: For implementing the ANN model.
 Scikit-learn: For data preprocessing and scaling.
@@ -27,10 +27,12 @@ MiniSom: For implementing the Self-Organizing Map.
 NumPy: For numerical operations.
 Matplotlib: For data visualization.
 Pandas: For data manipulation and analysis.
-Code Explanation
+
+## Code Explanation:
+
 The code implements a hybrid model consisting of two parts:
 
-Self-Organizing Map (SOM):
+### Self-Organizing Map (SOM):
 
 Initializes and trains the SOM using customer data.
 Visualizes the results to identify potential fraudulent behaviors based on the distance map.
@@ -39,7 +41,7 @@ Artificial Neural Network (ANN):
 Constructs an ANN to classify the potential fraud cases identified by the SOM.
 Trains the model using the scaled customer data, predicting the probability of fraud.
 
-Main Code Snippet:
+## Main Code Snippet:
 
 #Making a Hybird Deep Learning Model
 
@@ -131,9 +133,9 @@ y_pred = classifier.predict(customers)
 y_pred = np.concatenate((dataset.iloc[:, 0:1].values, y_pred), axis=1)
 y_pred = y_pred[y_pred[:, 1].argsort()]
 
-How to Run:
+## How to Run:
 
-Requirements:
+## Requirements:
 
 Software: Python (version 3.6 or above), TensorFlow, Scikit-learn, Pylab, MiniSom, NumPy, Matplotlib, Pandas.
 Hardware: Any system capable of running Python with the above libraries installed (recommended: 8 GB RAM or more).
@@ -148,5 +150,5 @@ Ensure the dataset Credit_Card_Applications.csv is in the same directory as the 
 Run the Python script:
 python fraud_detection_som_ann.py
 
-Conclusion:
+## Conclusion:
 The hybrid model developed in this project effectively combines SOM for unsupervised learning and ANN for supervised learning, resulting in a robust system for fraud detection with a high accuracy rate. This system can be utilized by financial institutions to enhance their credit card application review processes.
