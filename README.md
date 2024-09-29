@@ -2,7 +2,7 @@ Fraud Detection System Using Self-Organizing Maps (SOM) and Artificial Neural Ne
 
 This aims to develop a hybrid deep learning model for detecting potential fraud in credit card applications using a dataset from a bank. By implementing Self-Organizing Maps (SOM) for unsupervised learning and Artificial Neural Networks (ANN) for supervised learning, we achieve a fraud detection success rate of 96%. This innovative approach enhances the decision-making process in credit card approvals, safeguarding financial institutions against fraudulent activities.
 
-Dataset
+Dataset:
 The dataset used in this project consists of customer applications for an advanced credit card. It contains the following features:
 
 CustomerID	A1	A2	A3	A4	A5	A6	A7	A8	A9	A10	A11	A12	A13	A14	Class
