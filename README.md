@@ -8,7 +8,11 @@ The dataset used in this project consists of customer applications for an advanc
 CustomerID	A1	A2	A3	A4	A5	A6	A7	A8	A9	A10	A11	A12	A13	A14	Class
 15776156	1	22.08	11.46	2	4	4	1.585	0	0	0	1	2	100	1213	0
 15739548	0	22.67	7	2	8	4	0.165	0	0	0	0	2	160	1	0
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+15662854	0	29.58	1.75	1	4	4	1.25	0	0	0	1	2	280	1	0
+15687688	0	21.67	11.5	1	5	3	0	1	1	11	1	2	0	1	1
+15715750	1	20.17	8.17	2	6	4	1.96	1	1	14	0	2	60	159	1
+15571121	0	15.83	0.585	2	8	8	1.5	1	1	2	0	2	100	1	1
+..............................................................................
 CustomerID: Unique identifier for each customer.
 A1 - A14: Various features representing customer attributes and behaviors.
 Class: Indicates whether the application is fraudulent (1) or not (0).
